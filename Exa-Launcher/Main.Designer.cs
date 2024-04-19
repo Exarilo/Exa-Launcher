@@ -34,31 +34,31 @@
             this.panelView = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pbResize = new System.Windows.Forms.PictureBox();
-            this.splitter = new System.Windows.Forms.Splitter();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.PanelTopBar = new System.Windows.Forms.Panel();
             this.lbCurrentView = new System.Windows.Forms.Label();
             this.btMinimize = new System.Windows.Forms.Button();
             this.btMaximize = new System.Windows.Forms.Button();
             this.btClose = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.roundedPanel = new Exa_Launcher.RoundedPanel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.tabFlux = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.tabDevApp = new System.Windows.Forms.Button();
+            this.splitter = new System.Windows.Forms.Splitter();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btAvatar = new System.Windows.Forms.Button();
+            this.tabDevApp = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.tabFlux = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.roundedPanel = new Exa_Launcher.RoundedPanel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResize)).BeginInit();
-            this.panel2.SuspendLayout();
             this.PanelTopBar.SuspendLayout();
-            this.roundedPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.roundedPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,9 +87,11 @@
             // 
             // panelView
             // 
+            this.panelView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panelView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelView.Location = new System.Drawing.Point(0, 0);
             this.panelView.Name = "panelView";
+            this.panelView.Padding = new System.Windows.Forms.Padding(15);
             this.panelView.Size = new System.Drawing.Size(926, 471);
             this.panelView.TabIndex = 3;
             // 
@@ -112,24 +114,6 @@
             this.pbResize.Size = new System.Drawing.Size(31, 32);
             this.pbResize.TabIndex = 0;
             this.pbResize.TabStop = false;
-            // 
-            // splitter
-            // 
-            this.splitter.Location = new System.Drawing.Point(114, 25);
-            this.splitter.Name = "splitter";
-            this.splitter.Size = new System.Drawing.Size(3, 503);
-            this.splitter.TabIndex = 3;
-            this.splitter.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel2.Controls.Add(this.roundedPanel);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(114, 503);
-            this.panel2.TabIndex = 2;
             // 
             // PanelTopBar
             // 
@@ -198,120 +182,24 @@
             this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // roundedPanel
+            // splitter
             // 
-            this.roundedPanel.AllowVerticalScrolling = true;
-            this.roundedPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.roundedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.roundedPanel.Controls.Add(this.button10);
-            this.roundedPanel.Controls.Add(this.button9);
-            this.roundedPanel.Controls.Add(this.button8);
-            this.roundedPanel.Controls.Add(this.tabFlux);
-            this.roundedPanel.Controls.Add(this.button6);
-            this.roundedPanel.Controls.Add(this.tabDevApp);
-            this.roundedPanel.Controls.Add(this.panel4);
-            this.roundedPanel.Location = new System.Drawing.Point(15, 21);
-            this.roundedPanel.Name = "roundedPanel";
-            this.roundedPanel.Radius = 30;
-            this.roundedPanel.Size = new System.Drawing.Size(85, 461);
-            this.roundedPanel.TabIndex = 22;
+            this.splitter.Location = new System.Drawing.Point(114, 25);
+            this.splitter.Name = "splitter";
+            this.splitter.Size = new System.Drawing.Size(3, 503);
+            this.splitter.TabIndex = 3;
+            this.splitter.TabStop = false;
             // 
-            // button10
+            // panel2
             // 
-            this.button10.AutoSize = true;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button10.Location = new System.Drawing.Point(0, 260);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(85, 32);
-            this.button10.TabIndex = 35;
-            this.button10.Tag = "4";
-            this.button10.Text = "Tools";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.AutoSize = true;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button9.Location = new System.Drawing.Point(0, 228);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(85, 32);
-            this.button9.TabIndex = 34;
-            this.button9.Tag = "4";
-            this.button9.Text = "Console";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.AutoSize = true;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button8.Location = new System.Drawing.Point(0, 196);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(85, 32);
-            this.button8.TabIndex = 33;
-            this.button8.Tag = "4";
-            this.button8.Text = "Todo";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // tabFlux
-            // 
-            this.tabFlux.AutoSize = true;
-            this.tabFlux.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabFlux.FlatAppearance.BorderSize = 0;
-            this.tabFlux.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tabFlux.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
-            this.tabFlux.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.tabFlux.Location = new System.Drawing.Point(0, 164);
-            this.tabFlux.Name = "tabFlux";
-            this.tabFlux.Size = new System.Drawing.Size(85, 32);
-            this.tabFlux.TabIndex = 32;
-            this.tabFlux.Tag = "4";
-            this.tabFlux.Text = "Flux";
-            this.tabFlux.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.AutoSize = true;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button6.Location = new System.Drawing.Point(0, 132);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 32);
-            this.button6.TabIndex = 31;
-            this.button6.Tag = "4";
-            this.button6.Text = "Nagateur";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // tabDevApp
-            // 
-            this.tabDevApp.AutoSize = true;
-            this.tabDevApp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabDevApp.FlatAppearance.BorderSize = 0;
-            this.tabDevApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tabDevApp.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
-            this.tabDevApp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.tabDevApp.Location = new System.Drawing.Point(0, 100);
-            this.tabDevApp.Name = "tabDevApp";
-            this.tabDevApp.Size = new System.Drawing.Size(85, 32);
-            this.tabDevApp.TabIndex = 30;
-            this.tabDevApp.Tag = "4";
-            this.tabDevApp.Text = "Dev-App";
-            this.tabDevApp.UseVisualStyleBackColor = true;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel2.Controls.Add(this.roundedPanel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(15);
+            this.panel2.Size = new System.Drawing.Size(114, 503);
+            this.panel2.TabIndex = 2;
             // 
             // panel4
             // 
@@ -319,7 +207,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(85, 100);
+            this.panel4.Size = new System.Drawing.Size(84, 100);
             this.panel4.TabIndex = 29;
             // 
             // btAvatar
@@ -339,6 +227,120 @@
             this.btAvatar.TabIndex = 23;
             this.btAvatar.UseVisualStyleBackColor = false;
             // 
+            // tabDevApp
+            // 
+            this.tabDevApp.AutoSize = true;
+            this.tabDevApp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabDevApp.FlatAppearance.BorderSize = 0;
+            this.tabDevApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tabDevApp.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
+            this.tabDevApp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.tabDevApp.Location = new System.Drawing.Point(0, 100);
+            this.tabDevApp.Name = "tabDevApp";
+            this.tabDevApp.Size = new System.Drawing.Size(84, 32);
+            this.tabDevApp.TabIndex = 30;
+            this.tabDevApp.Tag = "4";
+            this.tabDevApp.Text = "Dev-App";
+            this.tabDevApp.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.AutoSize = true;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button6.Location = new System.Drawing.Point(0, 132);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 32);
+            this.button6.TabIndex = 31;
+            this.button6.Tag = "4";
+            this.button6.Text = "Nagateur";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // tabFlux
+            // 
+            this.tabFlux.AutoSize = true;
+            this.tabFlux.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabFlux.FlatAppearance.BorderSize = 0;
+            this.tabFlux.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tabFlux.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
+            this.tabFlux.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.tabFlux.Location = new System.Drawing.Point(0, 164);
+            this.tabFlux.Name = "tabFlux";
+            this.tabFlux.Size = new System.Drawing.Size(84, 32);
+            this.tabFlux.TabIndex = 32;
+            this.tabFlux.Tag = "4";
+            this.tabFlux.Text = "Flux";
+            this.tabFlux.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.AutoSize = true;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button8.Location = new System.Drawing.Point(0, 196);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(84, 32);
+            this.button8.TabIndex = 33;
+            this.button8.Tag = "4";
+            this.button8.Text = "Todo";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.AutoSize = true;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
+            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button9.Location = new System.Drawing.Point(0, 228);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(84, 32);
+            this.button9.TabIndex = 34;
+            this.button9.Tag = "4";
+            this.button9.Text = "Console";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.AutoSize = true;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F);
+            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button10.Location = new System.Drawing.Point(0, 260);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(84, 32);
+            this.button10.TabIndex = 35;
+            this.button10.Tag = "4";
+            this.button10.Text = "Tools";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // roundedPanel
+            // 
+            this.roundedPanel.AllowVerticalScrolling = true;
+            this.roundedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.roundedPanel.Controls.Add(this.button10);
+            this.roundedPanel.Controls.Add(this.button9);
+            this.roundedPanel.Controls.Add(this.button8);
+            this.roundedPanel.Controls.Add(this.tabFlux);
+            this.roundedPanel.Controls.Add(this.button6);
+            this.roundedPanel.Controls.Add(this.tabDevApp);
+            this.roundedPanel.Controls.Add(this.panel4);
+            this.roundedPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedPanel.Location = new System.Drawing.Point(15, 15);
+            this.roundedPanel.Name = "roundedPanel";
+            this.roundedPanel.Radius = 30;
+            this.roundedPanel.Size = new System.Drawing.Size(84, 473);
+            this.roundedPanel.TabIndex = 22;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,12 +355,12 @@
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbResize)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.PanelTopBar.ResumeLayout(false);
             this.PanelTopBar.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.roundedPanel.ResumeLayout(false);
             this.roundedPanel.PerformLayout();
-            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -370,12 +372,13 @@
         protected System.Windows.Forms.Button btMaximize;
         protected System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Splitter splitter;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panelView;
         private System.Windows.Forms.Label lbCurrentView;
+        private System.Windows.Forms.PictureBox pbResize;
+        private System.Windows.Forms.Splitter splitter;
+        private System.Windows.Forms.Panel panel2;
         private RoundedPanel roundedPanel;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
@@ -385,7 +388,6 @@
         private System.Windows.Forms.Button tabDevApp;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btAvatar;
-        private System.Windows.Forms.PictureBox pbResize;
     }
 }
 

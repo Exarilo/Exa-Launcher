@@ -61,11 +61,11 @@ namespace Exa_Launcher
         {
             if (IsKeyDown(Keys.Right))
             {
-          //     btAvatar.BackgroundImage = Properties.Resources.avatar_reverse;  
+                btAvatar.BackgroundImage = Properties.Resources.avatar_reverse;  
             }
             else if (e.KeyCode == Keys.Left)
             {
-            //    btAvatar.BackgroundImage = Properties.Resources.avatar;
+                btAvatar.BackgroundImage = Properties.Resources.avatar;
             }
         }
 
@@ -85,7 +85,6 @@ namespace Exa_Launcher
         private void ResizeForm(MouseEventArgs e)
         {
             this.ClientSize = new Size(this.ClientSize.Width + e.X - lastMousePosition.X, this.ClientSize.Height + e.Y - lastMousePosition.Y);
-            roundedPanel.Invalidate();
             roundedPanel.Invalidate();
         }
         private void PbResize_MouseDown(object sender, MouseEventArgs e) => (isResizing, lastMousePosition) = (e.Button == MouseButtons.Left, e.Location);

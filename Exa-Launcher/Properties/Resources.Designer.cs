@@ -63,9 +63,9 @@ namespace Exa_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap app {
+        internal static System.Drawing.Bitmap app_exe {
             get {
-                object obj = ResourceManager.GetObject("app", resourceCulture);
+                object obj = ResourceManager.GetObject("app_exe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,26 @@ namespace Exa_Launcher.Properties {
         internal static System.Drawing.Bitmap avatar_reverse {
             get {
                 object obj = ResourceManager.GetObject("avatar_reverse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bookmark {
+            get {
+                object obj = ResourceManager.GetObject("bookmark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap website {
+            get {
+                object obj = ResourceManager.GetObject("website", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

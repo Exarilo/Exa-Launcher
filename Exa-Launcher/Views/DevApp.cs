@@ -3,12 +3,13 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Exa_Launcher.Views
 {
+    //249,242
     public partial class DevApp : UserControl
     {
-        private const int icon_size = 32;
         public DevApp()
         {
             InitializeComponent();
@@ -21,9 +22,9 @@ namespace Exa_Launcher.Views
             listViewItems.LargeImageList.ColorDepth = ColorDepth.Depth32Bit; 
             btAddApp.Click += (s, e) => AddItem();
             listViewItems.DoubleClick += (s, e) => listViewItemClicked();
-            this.Resize += (s, e) => this.Invalidate(true);
+            this.Resize += (s, e) => roundedPanel1.Invalidate();
         }
-
+      
         private void listViewItemClicked()
         {
             if (listViewItems.SelectedItems.Count > 0)
@@ -57,12 +58,13 @@ namespace Exa_Launcher.Views
             listViewItems.Items.Add(item);
 
             item.ImageIndex = listViewItems.LargeImageList.Images.Count - 1;
+            listViewItems.Items[0].Group = listViewItems.Groups[0];
 
         }
 
         private void AppButton_Click(object sender, EventArgs e)
         {
-            Button clickedButton = (Button)sender;
+            System.Windows.Forms.Button clickedButton = (System.Windows.Forms.Button)sender;
             string appPath = (string)clickedButton.Tag;
             Process.Start(appPath);
         }

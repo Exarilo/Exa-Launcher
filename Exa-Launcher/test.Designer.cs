@@ -50,7 +50,6 @@
             // btAddApp
             // 
             this.btAddApp.AutoSize = true;
-            this.btAddApp.BackgroundImage = global::Exa_Launcher.Properties.Resources.app;
             this.btAddApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btAddApp.FlatAppearance.BorderSize = 0;
             this.btAddApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
