@@ -86,6 +86,7 @@ namespace Exa_Launcher
         {
             this.ClientSize = new Size(this.ClientSize.Width + e.X - lastMousePosition.X, this.ClientSize.Height + e.Y - lastMousePosition.Y);
             roundedPanel.Invalidate();
+            roundedPanel.Invalidate();
         }
         private void PbResize_MouseDown(object sender, MouseEventArgs e) => (isResizing, lastMousePosition) = (e.Button == MouseButtons.Left, e.Location);
         private void PbResize_MouseUp(object sender, MouseEventArgs e) => isResizing = false;

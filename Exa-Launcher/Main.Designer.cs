@@ -33,6 +33,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelView = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pbResize = new System.Windows.Forms.PictureBox();
             this.splitter = new System.Windows.Forms.Splitter();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PanelTopBar = new System.Windows.Forms.Panel();
@@ -50,15 +51,14 @@
             this.tabDevApp = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btAvatar = new System.Windows.Forms.Button();
-            this.pbResize = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResize)).BeginInit();
             this.panel2.SuspendLayout();
             this.PanelTopBar.SuspendLayout();
             this.roundedPanel.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbResize)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,6 +101,17 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(926, 32);
             this.panel6.TabIndex = 1;
+            // 
+            // pbResize
+            // 
+            this.pbResize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbResize.Cursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.pbResize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pbResize.Location = new System.Drawing.Point(895, 0);
+            this.pbResize.Name = "pbResize";
+            this.pbResize.Size = new System.Drawing.Size(31, 32);
+            this.pbResize.TabIndex = 0;
+            this.pbResize.TabStop = false;
             // 
             // splitter
             // 
@@ -189,6 +200,7 @@
             // 
             // roundedPanel
             // 
+            this.roundedPanel.AllowVerticalScrolling = true;
             this.roundedPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.roundedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -327,17 +339,6 @@
             this.btAvatar.TabIndex = 23;
             this.btAvatar.UseVisualStyleBackColor = false;
             // 
-            // pbResize
-            // 
-            this.pbResize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbResize.Cursor = System.Windows.Forms.Cursors.SizeNWSE;
-            this.pbResize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbResize.Location = new System.Drawing.Point(895, 0);
-            this.pbResize.Name = "pbResize";
-            this.pbResize.Size = new System.Drawing.Size(31, 32);
-            this.pbResize.TabIndex = 0;
-            this.pbResize.TabStop = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,13 +352,13 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbResize)).EndInit();
             this.panel2.ResumeLayout(false);
             this.PanelTopBar.ResumeLayout(false);
             this.PanelTopBar.PerformLayout();
             this.roundedPanel.ResumeLayout(false);
             this.roundedPanel.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbResize)).EndInit();
             this.ResumeLayout(false);
 
         }

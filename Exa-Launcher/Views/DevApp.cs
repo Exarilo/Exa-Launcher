@@ -12,6 +12,7 @@ namespace Exa_Launcher.Views
         public DevApp()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
             listViewItems.Columns.Add("Application", 0);
             listViewItems.Columns.Add("Path", 0);
             listViewItems.View = View.LargeIcon;
@@ -20,6 +21,7 @@ namespace Exa_Launcher.Views
             listViewItems.LargeImageList.ColorDepth = ColorDepth.Depth32Bit; 
             btAddApp.Click += (s, e) => AddItem();
             listViewItems.DoubleClick += (s, e) => listViewItemClicked();
+            this.Resize += (s, e) => this.Invalidate(true);
         }
 
         private void listViewItemClicked()
