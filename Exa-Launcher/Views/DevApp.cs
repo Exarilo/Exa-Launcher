@@ -58,7 +58,6 @@ namespace Exa_Launcher.Views
             listViewItems.Items.Add(item);
 
             item.ImageIndex = listViewItems.LargeImageList.Images.Count - 1;
-            listViewItems.Items[0].Group = listViewItems.Groups[0];
 
         }
 
